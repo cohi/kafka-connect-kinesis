@@ -16,13 +16,11 @@
 #
 
 
-: ${SUSPEND:='n'}
+: ${DEBUG_SUSPEND_FLAG:='n'}
 
 set -e
 
 mvn clean package
-export KAFKA_JMX_OPTS="-Xdebug -agentlib:jdwp=transport=dt_socket,server=y,suspend=${SUSPEND},address=5005"
-export CLASSPATH="$(find target/kafka-connect-target/usr/share/java -type f -name '*.jar' | tr '\n' ':')"
-export CLASSPATH="${CLASSPATH}:$(find ~/.m2/repository/ -name vertica-jdbc-7.1.2-0.jar | head -n 1 | tr '\n' ':')"
+export KAFKA_DEBUG='y'
 
 connect-standalone config/connect-avro-docker.properties config/KinesisSourceConnector.properties
