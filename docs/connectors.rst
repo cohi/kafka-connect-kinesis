@@ -22,14 +22,6 @@ and persisting the data to a :term:`Kafka topic`.
 
 
 .. toctree::
-    :maxdepth: 1
-    :caption: Transformations:
-    :glob:
-
-    transformations/*
-
-
-.. toctree::
     :maxdepth: 0
     :caption: Schemas:
     :hidden:

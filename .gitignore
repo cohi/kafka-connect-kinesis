@@ -1,3 +1,4 @@
 target
 hs_err_pid*
 config/KinesisSourceConnector.properties
+.okhttpcache
