@@ -37,7 +37,7 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-@Description("The KinesisSourceConnector is a :term:`Source Connector` that is used to pull data from Amazon Kinesis in " +
+@Description("The KinesisSourceConnector is a :term:`Source Connector`_ that is used to pull data from Amazon Kinesis in " +
     "realtime and persist the data to a Kafka topic.")
 public class KinesisSourceConnector extends SourceConnector {
   private static final Logger log = LoggerFactory.getLogger(KinesisSourceConnector.class);
