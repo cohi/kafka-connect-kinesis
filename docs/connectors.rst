@@ -27,4 +27,5 @@ and persisting the data to a :term:`Kafka topic`.
     :hidden:
 
     schemas
+    info
 
